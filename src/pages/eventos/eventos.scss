@@ -1,0 +1,35 @@
+page-eventos {
+  ion-card-header{
+    // background-color : #78909C !important;
+    background-color: #607D8B !important;
+    color : #FFFFFF;
+  }
+  ion-fab{
+     bottom: 1em;
+    // bottom: 89%;
+    right: 1em;
+
+    button{
+      background-color: #FF9800 !important;
+      // background-color: #d667cd !important;
+      font-size: 1.5em !important;
+    }
+  }
+   .ion-item{
+
+   }
+
+   .cargando{
+     background-color : #FFA726;
+   }
+
+   .subMenu{
+     background-color: #f4f4f7;
+   }
+
+   ion-refresher-content{
+     color: #FF5722 !important;
+   }
+
+
+}

@@ -1,0 +1,115 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-uppercase text-center>Turismo App</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!-- @//DbOmnesWeb2016
+@//DesarrolloWeb2016
+A_Benavides7791 -->
+<ion-content>
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab><ion-icon name="git-branch" ></ion-icon></button>
+      <button ion-fab (click)="goZonaSegura()"><ion-icon name="navigate"></ion-icon></button>
+      <button ion-fab><ion-icon name="search"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+
+  <ion-list no-border>
+
+    <ion-list-header align="Center">
+      <ion-searchbar placeholder="Buscar"></ion-searchbar>
+    </ion-list-header>
+    <ion-item class="color-gray" (click)="goToAtractivosTuristicos()">
+
+      <ion-thumbnail item-right>
+        <img src="assets/images/turismo.atractivos.png" height="160" width="160">
+      </ion-thumbnail>
+
+      <h2>Atractivos Turisticos</h2>
+      <p>Encuentra un sinnumero de blabla bla </p>
+
+    </ion-item>
+    <ion-item class="color-gray" >
+
+      <ion-thumbnail item-right>
+        <img src="assets/images/turismo.hotel.png">
+      </ion-thumbnail>
+
+      <h2>Hoteles y Hosterias</h2>
+      <p>Encuentra un sinnumero de blabla bla </p>
+
+    </ion-item>
+    <ion-item class="color-gray" >
+
+      <ion-thumbnail item-right>
+        <img src="assets/images/turismo.food.png">
+      </ion-thumbnail>
+
+      <h2>Restaurantes y Cateterias</h2>
+      <p>Encuentra un sinnumero de blabla bla </p>
+
+    </ion-item>
+    <ion-item class="color-gray" >
+
+      <ion-thumbnail item-right>
+        <img src="assets/images/turismo.zona.segura.png">
+      </ion-thumbnail>
+
+      <h2> Zonas Seguras</h2>
+      <p>Encuentra un sinnumero de blabla bla </p>
+
+    </ion-item>
+    <ion-item class="color-gray" >
+
+      <ion-thumbnail item-right>
+        <img src="http://www.savefoodcutwaste.com/wp-content/uploads/2012/10/Save-Food-Cut-Waste-banner-3-160x160.png">
+      </ion-thumbnail>
+
+      <h2> Centros de Divesión</h2>
+      <p>Encuentra un sinnumero de blabla bla </p>
+
+    </ion-item>
+    <ion-item class="color-gray" >
+
+      <ion-thumbnail item-right>
+        <img src="http://www.savefoodcutwaste.com/wp-content/uploads/2012/10/Save-Food-Cut-Waste-banner-3-160x160.png">
+      </ion-thumbnail>
+
+      <h2>Tiendas y Centros Comerciales</h2>
+      <p>Encuentra un sinnumero de blabla bla </p>
+
+    </ion-item>
+    <ion-item class="color-gray" >
+
+      <ion-thumbnail item-right>
+        <img src="http://www.savefoodcutwaste.com/wp-content/uploads/2012/10/Save-Food-Cut-Waste-banner-3-160x160.png">
+      </ion-thumbnail>
+
+      <h2> Hospitales y Clinicas</h2>
+      <p>Encuentra un sinnumero de blabla bla </p>
+
+    </ion-item>
+    <ion-item class="color-gray" >
+
+      <ion-thumbnail item-right>
+        <img src="http://www.savefoodcutwaste.com/wp-content/uploads/2012/10/Save-Food-Cut-Waste-banner-3-160x160.png">
+      </ion-thumbnail>
+
+      <h2> Provincias y Ciudades</h2>
+      <p>Encuentra un sinnumero de blabla bla </p>
+
+    </ion-item>
+
+
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-uppercase text-center>
+      Eventos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-fab>
+  <button ion-fab color="primary" [navPush]="addingZS">🔰</button>
+</ion-fab>
+<ion-content>
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list class="collectio-item center" [hidden]="allEventos">
+    <button class="cargando" ion-item text-center>
+          Cargando...
+    </button>
+  </ion-list>
+
+  <ion-card *ngFor="let evento of allEventos" class="list card animated bounceInLeft">
+    <ion-card-header text-uppercase text-center style="color: #FFFFFF">
+      {{ evento.evento_nombre }}
+    </ion-card-header>
+
+    <ion-list>
+      <button ion-item class="subMenu">
+         {{evento.atractivo_nombre}} <br>
+         {{ evento.evento_descripcion }}
+      </button>
+
+      <button ion-item>
+         <ion-icon name="alarm" item-left></ion-icon>
+         {{ evento.evento_inicio }}
+      </button>
+
+      <button ion-item>
+         <ion-icon name="clock" item-left></ion-icon>
+         {{ evento.evento_fin }}
+      </button>
+
+      <button ion-item>
+          {{evento.canton_nombre}} - {{ evento.provincia_nombre}}
+      </button>
+
+        <a ion-button color="dark" clear href="tel:{{evento.evento_descripcion}}">{{evento.evento_descripcion}} </a>
+
+
+    </ion-list>
+  </ion-card>
+</ion-content>
